@@ -18,7 +18,7 @@ There are 4 scripts provided which walk through the interactive capabilities of 
   - Use familiar dplyr with Spark using [Sparklyr](http://spark.rstudio.com)
 5. **Advanced visualization with Shiny (R)** Demonstrates:
   - Use of 'shiny' to provide interactive graphics inside CDSW
-6. **Spark Scala Example Demonstrates:
+6. **Spark Scala** Demonstrates:
   - Use of Scala Spark running in YARN client mode.
   
 ## Jobs
