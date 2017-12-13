@@ -16,4 +16,5 @@ mcparallel(runApp(host="0.0.0.0", port=8080, launch.browser=FALSE,
 service.url <- paste("http://", Sys.getenv("CDSW_ENGINE_ID"), ".", 
 Sys.getenv("CDSW_DOMAIN"), sep="") 
 Sys.sleep(5)
+print ( service.url )
 iframe(src=service.url, width="640px", height="480px")

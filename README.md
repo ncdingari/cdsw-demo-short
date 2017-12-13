@@ -11,12 +11,15 @@ There are 4 scripts provided which walk through the interactive capabilities of 
 2. **PySpark (Python 2).** Demonstrates:
   - Easy connectivity to (kerberized) Spark in YARN client mode.
   - Access to Hadoop HDFS CLI (e.g. `hdfs dfs -ls /`).
+  - Random Forest Classifier
 3. **Tensorflow (Python 2).** Demonstrates:
   - Ability to install and use custom packages (e.g. `pip search tensorflow`)
 4. **R on Spark via Sparklyr (R).** Demonstrates:
   - Use familiar dplyr with Spark using [Sparklyr](http://spark.rstudio.com)
 5. **Advanced visualization with Shiny (R)** Demonstrates:
   - Use of 'shiny' to provide interactive graphics inside CDSW
+6. **Spark Scala Example Demonstrates:
+  - Use of Scala Spark running in YARN client mode.
   
 ## Jobs
 We recommend setting up a **"Nightly Analysis"** job to illustrate how data scientists can easily automate their projects.
@@ -25,9 +28,9 @@ We recommend setting up a **"Nightly Analysis"** job to illustrate how data scie
 ## Setup instructions
 Note: You only need to do this once.
 
-1. In a Python 2 Session:
+1. In a Python Session:
 ```Python
-! pip2 install --upgrade dask keras matplotlib pandas_highcharts protobuf tensorflow seaborn
+! pip install --upgrade dask keras matplotlib pandas_highcharts protobuf tensorflow seaborn
 ```
 Note, you must then stop the workbench and restart it in order for all the packages to be seen.
 
@@ -44,3 +47,4 @@ install.packages('shiny')
 3. Stop all sessions, then proceed.
 
 ‹
+
