@@ -44,7 +44,11 @@ install.packages("mgcv")
 install.packages('shiny') 
 ```
 
-3. Stop all sessions, then proceed.
+3. In a Terminal:
+```shell
+hdfs dfs -put -f $HOME/data/ebay-xbox.csv /user/$HADOOP_USER_NAME
+hdfs dfs -put -f $HOME/data/churn.all /user/$HADOOP_USER_NAME
+```
 
+4. Stop all sessions, then proceed.
 ‹
-

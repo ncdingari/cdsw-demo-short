@@ -12,7 +12,7 @@ import org.apache.spark.sql._
 import org.apache.spark.sql.functions._
 
 // load the data into a new RDD
-val ebayText = sc.textFile("/tmp/spabba/ebay-xbox.csv") // needs to match location in hdfs
+val ebayText = sc.textFile("/user/" + sys.env("HADOOP_USER_NAME") + "/ebay-xbox.csv") // needs to match location in hdfs
 // Return the first element in this RDD
 ebayText.first()
 
