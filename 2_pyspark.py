@@ -40,7 +40,7 @@ from pyspark import SparkContext, SparkConf
 from pyspark.sql import SQLContext
 from pyspark.sql.types import *
 
-!hdfs dfs -put -f $HOME/data/churn.all /user/$HADOOP_USER_NAME
+#!hdfs dfs -put -f $HOME/data/churn.all /user/$HADOOP_USER_NAME
 
 conf = SparkConf().setAppName("ds-for-telco")
 sc = SparkContext(conf=conf)

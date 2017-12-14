@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib
 from matplotlib import pyplot as plt
 import utils
+import time
 
 ### Import MNIST data
 from tensorflow.examples.tutorials.mnist import input_data
@@ -104,3 +105,5 @@ for i in range(0,5):
 
 ### Explore using Tensorboard
 utils.start_tensorboard(logs_path, iframe=False)
+
+time.sleep(300)
